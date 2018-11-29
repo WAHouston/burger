@@ -1,5 +1,4 @@
 const connection = require("./connection")
-
 var orm = {
     selectAll: function(cb) {
         var queryString = "SELECT * FROM burgers;"
@@ -29,5 +28,4 @@ var orm = {
         })
     }
 }
-
 module.exports = orm
