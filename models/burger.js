@@ -6,12 +6,12 @@ var burger = {
         })
     },
     insertOne: function(value, cb) {
-        orm.insertOne(function(res) {
+        orm.insertOne(value, function(res) {
             cb(res)
         })
     },
     updateOne: function(id, cb) {
-        orm.updateOne(function(res) {
+        orm.updateOne(id, function(res) {
             cb(res)
         })
     }
